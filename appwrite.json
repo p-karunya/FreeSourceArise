@@ -123,6 +123,46 @@
             "entrypoint": "src/main.py",
             "commands": "pip install -r requirements.txt",
             "path": "functions/MainChat"
+        },
+        {
+            "$id": "67ba2a0200304b2d582b",
+            "name": "CreateRepo",
+            "runtime": "python-3.12",
+            "specification": "s-0.5vcpu-512mb",
+            "execute": [
+                "any"
+            ],
+            "events": [],
+            "scopes": [
+                "users.read"
+            ],
+            "schedule": "",
+            "timeout": 15,
+            "enabled": true,
+            "logging": true,
+            "entrypoint": "src/main.py",
+            "commands": "pip install -r requirements.txt",
+            "path": "functions/CreateRepo"
+        },
+        {
+            "$id": "67ba437d0032c1418144",
+            "name": "AddFile",
+            "runtime": "python-3.12",
+            "specification": "s-0.5vcpu-512mb",
+            "execute": [
+                "any"
+            ],
+            "events": [],
+            "scopes": [
+                "users.read"
+            ],
+            "schedule": "",
+            "timeout": 15,
+            "enabled": true,
+            "logging": true,
+            "entrypoint": "src/main.py",
+            "commands": "pip install -r requirements.txt",
+            "path": "functions/AddFile"
         }
     ]
 }
