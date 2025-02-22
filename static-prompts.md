@@ -52,3 +52,4 @@ Also have it output a `todo.md` that can be checked off.
 
 > Can you make a `todo.md` that I can use as a checklist? Be thorough.
 
+## Stage 3: Execution
