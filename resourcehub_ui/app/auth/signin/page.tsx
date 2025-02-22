@@ -73,12 +73,16 @@ const FloatingIcons = () => {
   );
 };
 
-export default function SignIn() {
+export default async function SignIn() {
   const router = useRouter();
   const [formData, setFormData] = useState({
     email: "",
     password: "",
   });
+
+  if (await MainAccount.get()) {
+    router.push("/search/all");
+  }
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
@@ -90,7 +94,7 @@ export default function SignIn() {
     } catch (error) {
       router.push("/auth/signup");
     }
-    router.push("/search");
+    router.push("/search/all");
   };
 
   return (
