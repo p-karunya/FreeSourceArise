@@ -19,7 +19,7 @@ These are prompts for greenfield app generation using an LLM provided by Harper 
 
 The output is saved as `spec.md`
 
-## Stage 2: Planning
+## Stage 2a: Planning
 Take the spec and pass it to a reasoning LLM (o1*, o3*, *r1)
 This is the TDD prompt
 
@@ -52,13 +52,19 @@ Also have it output a `todo.md` that can be checked off.
 
 > Can you make a `todo.md` that I can use as a checklist? Be thorough.
 
+## Stage 2b: Identity Kit
+
+Take the spec, with it's detailed description of the functionality to be provided and generate a set of Design Tokens that provide a visual vocabulary that matches the sentiment expressed in the functionality provided to the end user.  It should be a coherent identity that can be used on web sites, marketing materials, business cards, and advertising campaigns.
+
 ## Stage 3: Execution
 
 1. Set up the repo (boilerplate, uv init, cargo init, etc)
-2. Start up your IDE (VS Code, Aider, Cursor, etc)
-3. Copy paste code from LLM to IDE
-4. Run code, run tests, etc.
-5. Iterate
-6. If it works, move on the to the next prompt
-7. If it doesn't work, pass the code to the LLM to debug
-8. Rinse, repeat
+1. Start up your IDE (VS Code, Aider, Cursor, etc)
+1. Copy paste code from LLM to IDE
+1. Match code to Resources List, add boilerplate to initialize the boilerplate to the repo
+1. Keep a running total of operations cost
+1. Run code, run tests, etc.
+1. Iterate
+1. If it works, move on the to the next prompt
+1. If it doesn't work, pass the code to the LLM to debug
+1. Rinse, repeat
