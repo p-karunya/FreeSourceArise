@@ -3,7 +3,7 @@
 These are prompts for greenfield app generation using an LLM provided by Harper Reed at:
 [Harper's Blog](https://harper.blog/2025/02/16/my-llm-codegen-workflow-atm/)
 
-![Application Workflow](freesource-arise-workflow.svg)
+![Application Workflow](freesource-arise-workflow.png)
 
 ## Stage 1: Idea Honing
 
