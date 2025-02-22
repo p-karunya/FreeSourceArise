@@ -53,3 +53,12 @@ Also have it output a `todo.md` that can be checked off.
 > Can you make a `todo.md` that I can use as a checklist? Be thorough.
 
 ## Stage 3: Execution
+
+1. Set up the repo (boilerplate, uv init, cargo init, etc)
+2. Start up your IDE (VS Code, Aider, Cursor, etc)
+3. Copy paste code from LLM to IDE
+4. Run code, run tests, etc.
+5. Iterate
+6. If it works, move on the to the next prompt
+7. If it doesn't work, pass the code to the LLM to debug
+8. Rinse, repeat
